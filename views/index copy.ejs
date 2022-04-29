@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title> Snake Game </title>
+</head>
+<body>
+    <div class="container noselect">
+        <h1> Snake Game </h1>
+        <div class="wrapper">
+            <!-- recarga la pagina para iniciar un nuevo juego -->
+            <button onClick="window.location.reload();" id="restart">
+                Restart
+            </button>
+
+            <!-- canvas o lienzo para dibujar nuestros elementos -->
+            <canvas id="canvas" width="400" height="400"></canvas>
+            
+            <!-- puntuaje y leaderboard -->
+            <div id="ui">
+                <h2> Score </h2>
+                <span id="score"> 00 </span>
+                <form action="leaderboard">
+                    <button id="leaderboard">Leaderboard</button>
+                </form>
+            </div>
+
+            <!-- instrucciones y boton para ir al login -->
+            <div class="instructions">
+                <h1> Use your arrows to move </h1>
+                <a href="login"><input type="button" class="userInput" value="Login"></a>
+            </div>
+
+        </div>
+    </div>
+
+<!-- aqui se trae el codigo de javascript -->
+<script src="resources/css/script.js"></script>
+
+</body>
+</html>
